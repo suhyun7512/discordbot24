@@ -1,0 +1,29 @@
+name: Discord Bot CI/CD
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2 
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt  
+
+      - name: Run the bot
+        run: python discord-bot.py
+        env:
+          DISCORD_TOKEN: ${{ MTExMTU2NjAyNjc1NzM5NDQ3Mw.GQ7Ld_.PAzeobtYhFzk1ZIASQSOu0XQxVoOOx2DgqmfTo }}
