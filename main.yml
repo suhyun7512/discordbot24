@@ -26,4 +26,4 @@ jobs:
       - name: Run the bot
         run: python discord-bot.py
         env:
-          DISCORD_TOKEN: ${{ MTExMTU2NjAyNjc1NzM5NDQ3Mw.GQ7Ld_.PAzeobtYhFzk1ZIASQSOu0XQxVoOOx2DgqmfTo }}
+          DISCORD_TOKEN: ${{MTExMTU2NjAyNjc1NzM5NDQ3Mw.Ghbokp.PBmdNIKSGUem_IcL_rswdMDCY32nGm7sRZ1SqE}}
