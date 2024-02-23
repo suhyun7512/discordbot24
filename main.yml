@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2 
+        uses: actions/checkout@v2
 
       - name: Set up Python
         uses: actions/setup-python@v2
@@ -21,9 +21,9 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt  
+          pip install -r requirements.txt
 
       - name: Run the bot
         run: python discord-bot.py
         env:
-          DISCORD_TOKEN: ${{MTExMTU2NjAyNjc1NzM5NDQ3Mw.Ghbokp.PBmdNIKSGUem_IcL_rswdMDCY32nGm7sRZ1SqE}}
+          DISCORD_TOKEN: ${{ secrets.sh070615 }}
